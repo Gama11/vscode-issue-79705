@@ -1,0 +1,29 @@
+{
+	"fileTypes": [
+		"hx"
+	],
+	"name": "Haxe",
+	"scopeName": "source.hx",
+	"patterns": [
+		{
+			"begin": "/\\*",
+			"end": "\\*/",
+			"name": "comment.block.documentation.hx",
+			"patterns": [
+				{
+					"include": "#javadoc-tags"
+				}
+			]
+		}
+	],
+	"repository": {
+		"javadoc-tags": {
+			"patterns": [
+				{
+					"match": "@param",
+					"name": "storage.type.class.javadoc"
+				}
+			]
+		}
+	}
+}
